@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Masai Doctor Records</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<h1 class="text-4xl text-center underline text-blue-600 font-bold mb-14">
+			HOSPITAL - DOCTOR RECORDS
+		</h1>
+
+		<div class="container mx-auto flex justify-between">
+			<!-- Use this form for data input  -->
+			<form id="masaiForm">
+				<input placeholder="Name" type="text" id="name" />
+				<input placeholder="Doctor ID" type="text" id="doctor_id" />
+				<select id="specialization">
+					<option value="">Select Specialization</option>
+					<option value="Dermatologist">Dermatologist</option>
+					<option value="Dentist">Dentist</option>
+					<option value="Gynecologist">Gynecologist</option>
+				</select>
+				<input placeholder="Experience" type="number" id="experience" />
+				<input placeholder="Email" type="email" id="email" />
+				<input placeholder="Mobile No." type="number" id="mobile" />
+				<input type="submit" value="Submit" />
+			</form>
+
+			<!-- Use this Select tag for filter part  -->
+			<!-- <select id="filter">
+				<option value="">Select Specialization</option>
+				<option value="Dermatologist">Dermatologist</option>
+				<option value="Dentist">Dentist</option>
+				<option value="Gynecologist">Gynecologist</option>
+			</select> -->
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Doctor ID</th>
+						<th>Specialization</th>
+						<th>Experience in Years</th>
+						<th>Email</th>
+						<th>Mobile No</th>
+						<th>Role</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- Append Rows here using JS & DOM  -->
+				</tbody>
+			</table>
+		</div>
+	</body>
+
+	<script src="main.js"></script>
+	<script></script>
+</html>
